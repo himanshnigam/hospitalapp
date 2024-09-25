@@ -1,0 +1,4 @@
+<h1>Appointment Confirmation</h1>
+<p> Dear <%= @patient.name %>,</p>
+<p> Your appointment with <%= @doctor.name %> has been confirmed for <%= @appointment.appointment_date.strftime("%A, %B %d, %Y at %I:%M %p") %>. Please be on schedule for your visit.</p>
+<p>Best regards,<br>The Hospital App Team</p>
