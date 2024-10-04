@@ -46,7 +46,7 @@ RSpec.describe User, type: :model do
       expect(user.comments).to include(comment1, comment2)
     end
 
-    it 'if the post is deleted when the user is deleted' do
+    it 'if the associated posts are deleted when the user is deleted' do
       user.destroy
       expect(User.count).to eq(0)
       expect(Post.count).to eq(0)
